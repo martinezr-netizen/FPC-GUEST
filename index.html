@@ -1,71 +1,137 @@
+
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FPC Guest Password</title>
 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #003d27, #087344);
+            color: white;
+        }
+
+        header {
+            background: #003b25;
+            text-align: center;
+            padding: 35px 20px;
+            border-bottom: 5px solid silver;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: clamp(25px, 5vw, 42px);
+            margin: 0;
+        }
+
+        header p {
+            color: #d5e2dc;
+            letter-spacing: 2px;
+        }
+
+        main {
+            min-height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .password-card {
+            background: white;
+            color: #00452b;
+            text-align: center;
+            padding: 45px 30px;
+            border-radius: 20px;
+            border: 5px solid silver;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .password {
+            font-size: clamp(28px, 6vw, 45px);
+            margin: 25px 0;
+            overflow-wrap: anywhere;
+        }
+
+        .notice {
+            background-color: #fff3cd;
+            color: #8a4500;
+            padding: 18px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #e6bd53;
+        }
+
+        .notice strong {
+            font-size: 17px;
+        }
+
+        .notice p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .slogan {
+            font-size: 23px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-top: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #d5e2dc;
+            letter-spacing: 2px;
+        }
+    </style>
 </head>
 
+<body>
 
+    <header>
+        <h1>FPC Guest Password for the Day</h1>
+        <p>FLAGLER PALM COAST HIGH SCHOOL</p>
+    </header>
 
-<body style="margin:0; background-color:#eef3fa; font-family:Arial,sans-serif;">
+    <main>
+        <div class="password-card">
 
+            <h3>TODAY'S GUEST WI-FI PASSWORD</h3>
 
+            <h2 class="password">paper family sort</h2>
 
-    <div style="
+            <div class="notice">
+                <strong>
+                    IMPORTANT: Spaces are part of the password!
+                </strong>
 
-        background-color:#164b91;
+                <p>
+                    Please enter the password exactly as shown,
+                    including the spaces between each word.
+                </p>
+            </div>
 
-        color:white;
+            <div class="slogan">
+                GO BULLDOGS!
+            </div>
 
-        padding:30px;
+        </div>
+    </main>
 
-        text-align:center;
-
-        box-shadow:0 4px 12px #999;
-
-    ">
-
-        <h1 style="margin:0;">
-
-            FPC Guest Password for the Day
-
-        </h1>
-
-        <p>Daily Guest Wi-Fi Information</p>
-
-    </div>
-
-
-
-    <div style="
-
-        display:flex;
-
-        justify-content:center;
-
-        align-items:center;
-
-        min-height:70vh;
-
-        text-align:center;
-
-    ">
-
-        <h1 style="font-size:45px; color:#164b91;">
-
-            paper family sort
-
-        </h1>
-
-    </div>
-
-
+    <footer>
+        FPC BULLDOG PRIDE
+    </footer>
 
 </body>
-
 </html>
